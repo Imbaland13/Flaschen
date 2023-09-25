@@ -11,6 +11,7 @@ namespace Flaschen
         T content;
         public bool IsEmpty()
         {
+            Console.WriteLine(content == null);
             return content == null;
         }
         public void FillBottle(T content)
@@ -19,7 +20,7 @@ namespace Flaschen
         }
         public T Empty()
         {
-            T returnen = content;           
+            T returnen = content;
             content = null;
             return returnen;
         }
